@@ -56,7 +56,7 @@ Linear Regression
 Random Forest Regressor 🌳 (best model)
 
 🚀 Model Comparison & Final Execution
-1.Support Vector Regressor (SVR)
+Support Vector Regressor (SVR)
 '''from sklearn import svm
 from sklearn.metrics import mean_absolute_percentage_error
 
@@ -65,7 +65,7 @@ model_svr.fit(X_train, Y_train)
 y_pred_svr = model_svr.predict(X_valid)
 print("SVR MAPE:", mean_absolute_percentage_error(Y_valid, y_pred_svr))'''
 
-2.Linear Regression
+Linear Regression
 '''from sklearn.linear_model import LinearRegression
 
 model_lr = LinearRegression()
@@ -73,7 +73,7 @@ model_lr.fit(X_train, Y_train)
 y_pred_lr = model_lr.predict(X_valid)
 print("Linear Regression MAPE:", mean_absolute_percentage_error(Y_valid, y_pred_lr))'''
 
-3.Random Forest Regressor (Final Chosen Model)
+Random Forest Regressor (Final Chosen Model)
 '''from sklearn.ensemble import RandomForestRegressor
 
 model_rf = RandomForestRegressor(n_estimators=100, random_state=42)
