@@ -1,7 +1,7 @@
 🏠 House Price Prediction using Machine Learning
 
-This project aims to build a Machine Learning model to predict house prices using a dataset containing property details such as the number of rooms, area, location, building type, and more.
-The model helps stakeholders in the real estate industry make informed decisions about property valuation.
+This project builds a Machine Learning model to predict house prices using a dataset containing property details such as the number of rooms, area, location, building type, and more.
+It helps stakeholders in the real estate industry make informed decisions about property valuation.
 
 📌 Features of the Dataset
 
@@ -35,15 +35,15 @@ Dataset file: HousePricePrediction.csv
 
 ⚙️ Data Preprocessing
 
-Identification of categorical, integer, and float variables
+Identify categorical, integer, and float variables
 
-Exploratory Data Analysis (EDA)
+Perform Exploratory Data Analysis (EDA)
 
-Handling missing values
+Handle missing values
 
-Encoding categorical variables using One-Hot Encoding
+Encode categorical variables using One-Hot Encoding
 
-Splitting dataset into training and validation sets
+Split dataset into training and validation sets
 
 🧠 Algorithms Compared
 
@@ -56,7 +56,7 @@ Linear Regression
 Random Forest Regressor 🌳 (best model)
 
 🚀 Model Comparison & Final Execution
-Support Vector Regressor (SVR)
+🔹 Support Vector Regressor (SVR)
 from sklearn import svm
 from sklearn.metrics import mean_absolute_percentage_error
 
@@ -65,7 +65,7 @@ model_svr.fit(X_train, Y_train)
 y_pred_svr = model_svr.predict(X_valid)
 print("SVR MAPE:", mean_absolute_percentage_error(Y_valid, y_pred_svr))
 
-Linear Regression
+🔹 Linear Regression
 from sklearn.linear_model import LinearRegression
 
 model_lr = LinearRegression()
@@ -73,7 +73,7 @@ model_lr.fit(X_train, Y_train)
 y_pred_lr = model_lr.predict(X_valid)
 print("Linear Regression MAPE:", mean_absolute_percentage_error(Y_valid, y_pred_lr))
 
-Random Forest Regressor (Final Chosen Model)
+🔹 Random Forest Regressor (Final Chosen Model)
 from sklearn.ensemble import RandomForestRegressor
 
 model_rf = RandomForestRegressor(n_estimators=100, random_state=42)
@@ -89,7 +89,7 @@ Linear Regression MAPE: slightly higher error
 
 Random Forest MAPE: ✅ lowest error, best performance
 
-📌 Final Model Selected: Random Forest Regressor
+📌 Final Model Selected → Random Forest Regressor
 
 Scatter plot of Actual vs Predicted Prices using Random Forest:
 
