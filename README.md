@@ -57,29 +57,29 @@ Random Forest Regressor 🌳 (best model)
 
 🚀 Model Comparison & Final Execution
 Support Vector Regressor (SVR)
-'''from sklearn import svm
+from sklearn import svm
 from sklearn.metrics import mean_absolute_percentage_error
 
 model_svr = svm.SVR()
 model_svr.fit(X_train, Y_train)
 y_pred_svr = model_svr.predict(X_valid)
-print("SVR MAPE:", mean_absolute_percentage_error(Y_valid, y_pred_svr))'''
+print("SVR MAPE:", mean_absolute_percentage_error(Y_valid, y_pred_svr))
 
 Linear Regression
-'''from sklearn.linear_model import LinearRegression
+from sklearn.linear_model import LinearRegression
 
 model_lr = LinearRegression()
 model_lr.fit(X_train, Y_train)
 y_pred_lr = model_lr.predict(X_valid)
-print("Linear Regression MAPE:", mean_absolute_percentage_error(Y_valid, y_pred_lr))'''
+print("Linear Regression MAPE:", mean_absolute_percentage_error(Y_valid, y_pred_lr))
 
 Random Forest Regressor (Final Chosen Model)
-'''from sklearn.ensemble import RandomForestRegressor
+from sklearn.ensemble import RandomForestRegressor
 
 model_rf = RandomForestRegressor(n_estimators=100, random_state=42)
 model_rf.fit(X_train, Y_train)
 y_pred_rf = model_rf.predict(X_valid)
-print("Random Forest MAPE:", mean_absolute_percentage_error(Y_valid, y_pred_rf))'''
+print("Random Forest MAPE:", mean_absolute_percentage_error(Y_valid, y_pred_rf))
 
 📊 Results
 
