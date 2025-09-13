@@ -56,7 +56,7 @@ model_svr = svm.SVR()
 model_svr.fit(X_train, Y_train)
 y_pred_svr = model_svr.predict(X_valid)
 print("SVR MAPE:", mean_absolute_percentage_error(Y_valid, y_pred_svr))
-### 2.Linear Regression
+Linear Regression
 python
 Copy code
 from sklearn.linear_model import LinearRegression
@@ -65,7 +65,7 @@ model_lr = LinearRegression()
 model_lr.fit(X_train, Y_train)
 y_pred_lr = model_lr.predict(X_valid)
 print("Linear Regression MAPE:", mean_absolute_percentage_error(Y_valid, y_pred_lr))
-### 3.Random Forest Regressor (Final Chosen Model)
+Random Forest Regressor (Final Chosen Model)
 python
 Copy code
 from sklearn.ensemble import RandomForestRegressor
